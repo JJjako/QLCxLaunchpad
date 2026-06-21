@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.4</Version>
+  <Author>Unsere</Author>
+ </Creator>
+ <Manufacturer>Abstract</Manufacturer>
+ <Model>Small eye</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt Speed" Preset="ColorWheel"/>
+ <Channel Name="Dreh" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Magenta" Preset="NoFunction"/>
+ <Channel Name="Dimmer 1" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe 11" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Dimmer 11" Preset="IntensityDimmer"/>
+ <Channel Name="Red 1" Preset="IntensityRed"/>
+ <Channel Name="Green 1" Preset="IntensityGreen"/>
+ <Channel Name="Blue 1 " Preset="IntensityBlue"/>
+ <Channel Name="White 1" Preset="IntensityWhite"/>
+ <Channel Name="Red 2" Preset="IntensityRed"/>
+ <Channel Name="Green 2" Preset="IntensityGreen"/>
+ <Channel Name="Blue 2" Preset="IntensityBlue"/>
+ <Channel Name="White 2" Preset="IntensityWhite"/>
+ <Channel Name="Fokus" Preset="NoFunction"/>
+ <Channel Name="Auto Focus Distance" Preset="NoFunction"/>
+ <Channel Name="No function" Preset="NoFunction"/>
+ <Channel Name="Effect" Preset="ColorMacro"/>
+ <Channel Name="Frost" Preset="NoFunction"/>
+ <Mode Name="25 ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt Speed</Channel>
+  <Channel Number="5">Dreh</Channel>
+  <Channel Number="6">Magenta</Channel>
+  <Channel Number="7">Dimmer 1</Channel>
+  <Channel Number="8">Strobe 11</Channel>
+  <Channel Number="9">Dimmer 11</Channel>
+  <Channel Number="10">Red 1</Channel>
+  <Channel Number="11">Green 1</Channel>
+  <Channel Number="12">Blue 1 </Channel>
+  <Channel Number="13">White 1</Channel>
+  <Channel Number="14">Red 2</Channel>
+  <Channel Number="15">Green 2</Channel>
+  <Channel Number="16">Blue 2</Channel>
+  <Channel Number="17">White 2</Channel>
+  <Channel Number="18">Fokus</Channel>
+  <Channel Number="19">Auto Focus Distance</Channel>
+  <Channel Number="20">No function</Channel>
+  <Channel Number="21">Effect</Channel>
+  <Channel Number="22">Frost</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="7× 10W RGBW LEDs" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.8" Width="240" Height="300" Depth="240"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="80" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

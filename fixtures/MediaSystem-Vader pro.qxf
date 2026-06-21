@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.4</Version>
+  <Author>Felix Edelmann, martin3000, sirexeclp, Ryan Goodwin</Author>
+ </Creator>
+ <Manufacturer>MediaSystem</Manufacturer>
+ <Model>Vader Pros 700</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt Speed" Preset="ColorWheel"/>
+ <Channel Name="Cyan" Preset="IntensityCyan"/>
+ <Channel Name="Magenta" Preset="IntensityMagenta"/>
+ <Channel Name="Yellow" Preset="IntensityYellow"/>
+ <Channel Name="Color Temp" Preset="IntensityHue"/>
+ <Channel Name="Gobo" Preset="GoboWheel"/>
+ <Channel Name="R Gobo" Preset="GoboWheel"/>
+ <Channel Name="Gobo rot" Preset="GoboIndex"/>
+ <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Strobe 2">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="255">Dimmer Mode</Capability>
+ </Channel>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="31">No Prism</Capability>
+  <Capability Min="32" Max="255">Prism 1 on</Capability>
+ </Channel>
+ <Channel Name="Prism rot" Preset="PrismRotationSlowFast"/>
+ <Channel Name="Zoom" Preset="BeamZoomSmallBig"/>
+ <Channel Name="Fokus" Preset="NoFunction"/>
+ <Channel Name="Auto Focus Distance" Preset="NoFunction"/>
+ <Channel Name="Zoom real" Preset="BeamZoomSmallBig"/>
+ <Channel Name="Iris Open" Preset="ShutterIrisMaxToMin"/>
+ <Channel Name="Focus" Preset="BeamFocusNearFar"/>
+ <Channel Name="Scan Speed">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Blende von ausen" Preset="PrismRotationSlowFast"/>
+ <Channel Name="Gobo Normal Fade">
+  <Group Byte="1">Gobo</Group>
+  <Capability Min="0" Max="255">Gobo Normal Fade</Capability>
+ </Channel>
+ <Channel Name="No function 1" Preset="NoFunction"/>
+ <Channel Name="Blende" Preset="NoFunction"/>
+ <Channel Name="Blende 1">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Blende 1</Capability>
+ </Channel>
+ <Channel Name="Blende 2">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Blende 2</Capability>
+ </Channel>
+ <Channel Name="Blende 3">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Blende 3</Capability>
+ </Channel>
+ <Channel Name="Blende 4">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Blende 4</Capability>
+ </Channel>
+ <Channel Name="Blende 5">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Blende 5</Capability>
+ </Channel>
+ <Channel Name="Blende 6">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Blende 6</Capability>
+ </Channel>
+ <Channel Name="Blende 7">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Blende 7 presets</Capability>
+ </Channel>
+ <Channel Name="No function 10" Preset="NoFunction"/>
+ <Channel Name="No function 11" Preset="NoFunction"/>
+ <Channel Name="Blenden Configs">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">No function 12</Capability>
+ </Channel>
+ <Channel Name="No function 13" Preset="NoFunction"/>
+ <Channel Name="Maintenence">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="255">Maintenence intensity (0 - 100%)</Capability>
+ </Channel>
+ <Mode Name="25 ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt Speed</Channel>
+  <Channel Number="5">Cyan</Channel>
+  <Channel Number="6">Magenta</Channel>
+  <Channel Number="7">Yellow</Channel>
+  <Channel Number="8">Color Temp</Channel>
+  <Channel Number="9">Gobo</Channel>
+  <Channel Number="10">R Gobo</Channel>
+  <Channel Number="11">Gobo rot</Channel>
+  <Channel Number="12">Dimmer</Channel>
+  <Channel Number="13">Strobe</Channel>
+  <Channel Number="14">Strobe 2</Channel>
+  <Channel Number="15">Prism</Channel>
+  <Channel Number="16">Prism rot</Channel>
+  <Channel Number="17">Zoom</Channel>
+  <Channel Number="18">Fokus</Channel>
+  <Channel Number="19">Auto Focus Distance</Channel>
+  <Channel Number="20">Zoom real</Channel>
+  <Channel Number="21">Iris Open</Channel>
+  <Channel Number="22">Focus</Channel>
+  <Channel Number="23">Scan Speed</Channel>
+  <Channel Number="24">Blende von ausen</Channel>
+  <Channel Number="25">Gobo Normal Fade</Channel>
+  <Channel Number="26">No function 1</Channel>
+  <Channel Number="27">Blende</Channel>
+  <Channel Number="28">Blende 1</Channel>
+  <Channel Number="29">Blende 2</Channel>
+  <Channel Number="30">Blende 3</Channel>
+  <Channel Number="31">Blende 4</Channel>
+  <Channel Number="32">Blende 5</Channel>
+  <Channel Number="33">Blende 6</Channel>
+  <Channel Number="34">Blende 7</Channel>
+  <Channel Number="35">No function 10</Channel>
+  <Channel Number="36">No function 11</Channel>
+  <Channel Number="37">Blenden Configs</Channel>
+  <Channel Number="38">No function 13</Channel>
+  <Channel Number="39">Maintenence</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="7× 10W RGBW LEDs" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.8" Width="240" Height="300" Depth="240"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="80" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

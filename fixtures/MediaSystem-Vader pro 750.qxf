@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.4</Version>
+  <Author>Felix Edelmann, martin3000, sirexeclp, Ryan Goodwin</Author>
+ </Creator>
+ <Manufacturer>MediaSystem</Manufacturer>
+ <Model>Vader Pros 350</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Pan/Tilt Speed" Preset="ColorWheel"/>
+ <Channel Name="Cyan" Preset="IntensityCyan"/>
+ <Channel Name="Magenta" Preset="IntensityMagenta"/>
+ <Channel Name="Yellow" Preset="IntensityYellow"/>
+ <Channel Name="Color Temp" Preset="IntensityHue"/>
+ <Channel Name="Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="7">No Gobo</Capability>
+  <Capability Min="8" Max="11">3 Streifen</Capability>
+  <Capability Min="12" Max="15">3 Ecken</Capability>
+  <Capability Min="16" Max="19">4 Kreise</Capability>
+  <Capability Min="20" Max="23">4 Stern</Capability>
+  <Capability Min="24" Max="27">3 Kreise</Capability>
+  <Capability Min="28" Max="31">Balken 1</Capability>
+  <Capability Min="32" Max="35">Balken 2</Capability>
+  <Capability Min="36" Max="39">3 Ecken Stenrn</Capability>
+  <Capability Min="40" Max="43">Viele Kreise</Capability>
+  <Capability Min="44" Max="48">Tarzan</Capability>
+  <Capability Min="49" Max="51">Gpunktet klein</Capability>
+  <Capability Min="52" Max="55">Gepunktet gros</Capability>
+ </Channel>
+ <Channel Name="R Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="8">No Gobo</Capability>
+  <Capability Min="9" Max="15">Gezakt</Capability>
+  <Capability Min="16" Max="23">Stricje</Capability>
+  <Capability Min="24" Max="31">Blume</Capability>
+  <Capability Min="32" Max="39">Vierecke</Capability>
+  <Capability Min="40" Max="47">Tiger</Capability>
+  <Capability Min="48" Max="55">Monde</Capability>
+  <Capability Min="56" Max="255">Textur</Capability>
+ </Channel>
+ <Channel Name="Gobo rot" Preset="GoboIndex"/>
+ <Channel Name="Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Dimmer Mode" Preset="IntensityMasterDimmerFine"/>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="31">No Prism</Capability>
+  <Capability Min="32" Max="255">Prism 1 on</Capability>
+ </Channel>
+ <Channel Name="Prism rot" Preset="PrismRotationSlowFast"/>
+ <Channel Name="Zoom" Preset="BeamZoomSmallBig"/>
+ <Channel Name="Fokus" Preset="BeamFocusNearFar"/>
+ <Channel Name="Auto Focus Distance" Preset="BeamFocusFine"/>
+ <Channel Name="Auto Focus Distance 1" Preset="BeamFocusFine"/>
+ <Channel Name="Iris Open" Preset="ShutterIrisMaxToMin"/>
+ <Channel Name="Frost">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="9">No Effect</Capability>
+  <Capability Min="10" Max="255">Liner Frost</Capability>
+ </Channel>
+ <Channel Name="Scan Speed">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Controll">
+  <Group Byte="0">Maintenance</Group>
+ </Channel>
+ <Channel Name="Master dimmer fine" Preset="IntensityMasterDimmerFine"/>
+ <Mode Name="25 ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Pan/Tilt Speed</Channel>
+  <Channel Number="5">Cyan</Channel>
+  <Channel Number="6">Magenta</Channel>
+  <Channel Number="7">Yellow</Channel>
+  <Channel Number="8">Color Temp</Channel>
+  <Channel Number="9">Gobo</Channel>
+  <Channel Number="10">R Gobo</Channel>
+  <Channel Number="11">Gobo rot</Channel>
+  <Channel Number="12">Dimmer</Channel>
+  <Channel Number="13">Strobe</Channel>
+  <Channel Number="14">Dimmer Mode</Channel>
+  <Channel Number="15">Prism</Channel>
+  <Channel Number="16">Prism rot</Channel>
+  <Channel Number="17">Zoom</Channel>
+  <Channel Number="18">Fokus</Channel>
+  <Channel Number="19">Auto Focus Distance</Channel>
+  <Channel Number="20">Auto Focus Distance 1</Channel>
+  <Channel Number="21">Iris Open</Channel>
+  <Channel Number="22">Frost</Channel>
+  <Channel Number="23">Scan Speed</Channel>
+  <Channel Number="24">Controll</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="7× 10W RGBW LEDs" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.8" Width="240" Height="300" Depth="240"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Head" PanMax="540" TiltMax="270"/>
+  <Technical PowerConsumption="80" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
