@@ -56,8 +56,9 @@ struct Config {
 struct OscConfig {
     host: String,
     port: u16,
+    host2: Option<String>,
+    port2: Option<u16>,
 }
-
 #[derive(Debug, Deserialize, Clone)]
 struct MidiConfig {
     device_name: String,
@@ -467,10 +468,10 @@ enum Overlay {
  * ──────────────────────────────────────────────────────────────────────────── */
 
 struct BridgeState {
-    config: Config,
-    current_page: usize,
+    config: Config,    current_page: usize,
     osc_socket: UdpSocket,
     osc_target: String,
+    osc_target2: Option<String>,
     fader_levels: Vec<u8>,
     xy_selected: Option<(u8, u8)>,
     overlay: Overlay,
@@ -522,7 +523,8 @@ impl BridgeState {
     fn new(config: Config, colors_path: String, rgbw_path: String, nudge_xy_path: String) -> Result<Self> {
         let socket = UdpSocket::bind("0.0.0.0:0").context("bind UDP")?;
         let target = format!("{}:{}", config.osc.host, config.osc.port);
-
+        let target2 = config.osc.host2.as_ref()
+    .map(|h| format!("{}:{}", h, config.osc.port2.unwrap_or(7701)));
         let custom_colors = std::fs::read_to_string(&colors_path)
             .ok()
             .and_then(|s| serde_json::from_str::<ColorsFile>(&s).ok())
@@ -562,6 +564,7 @@ impl BridgeState {
             current_page: 0,
             osc_socket: socket,
             osc_target: target,
+            osc_target2: target2,
             colors_path,
             rgbw_states,
             rgbw_path,
@@ -584,7 +587,11 @@ impl BridgeState {
             args: vec![OscType::Float(value)],
         });
         let bytes = encoder::encode(&msg).context("encode OSC")?;
+        
         self.osc_socket.send_to(&bytes, &self.osc_target).context("send OSC")?;
+        if let Some(t2) = &self.osc_target2 {
+        self.osc_socket.send_to(&bytes, t2).context("send OSC target2")?;
+    }
         debug!("OSC -> {} = {:.3}", address, value);
         Ok(())
     }
