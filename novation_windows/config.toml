@@ -3,7 +3,8 @@
 [osc]
 host = "127.0.0.1"
 port = 7700
-
+host2 = "127.0.0.1"   # optional
+port2 = 7701           # optional
 [midi]
 device_name = "MIDIIN2 (LPMiniMK3 MIDI)"
 device_out_name = "LPMiniMK3 MIDI"
